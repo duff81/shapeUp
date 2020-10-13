@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url("https://fonts.googleapis.com/css?family=Anton");
+
+#buttons {
+  display: flexbox;
+  flex-direction: column;
+
+  margin: 6px;
+  width: 818px;
+  background-color: coral;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: black;
+}
+.title {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Pacifico", cursive;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 60px;
+
+  /* Chrome, Safari, Opera */
+  -webkit-animation: title 5s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: title 5s infinite;
+
+  /* Standar Syntax */
+  animation: title 5s infinite;
+}
+/*      
+     /* Chrome, Safari, Opera */
+@-webkit-keyframes title {
+  0% {
+    color: orange;
+  }
+  10% {
+    color: purple;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: CadetBlue;
+  }
+  40% {
+    color: yellow;
+  }
+  50% {
+    color: coral;
+  }
+  60% {
+    color: green;
+  }
+  70% {
+    color: cyan;
+  }
+  80% {
+    color: DeepPink;
+  }
+  90% {
+    color: DodgerBlue;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+.btn {
+  width: 120px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#canvas {
+  position: absolute;
+  margin: 6px;
+  display: flex;
+  height: 600px;
+  width: 600px;
+  background-color: aquamarine;
+  border-style: dotted;
+  border-color: black;
+  border-width: 3px;
+  overflow: hidden;
+}
+#side-panel {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  left: 612px;
+  margin: 6px;
+  padding-bottom: 16px;
+  height: 584px;
+  width: 200px;
+  background-color: forestgreen;
+  border-style: dotted;
+  border-color: black;
+  border-width: 3px;
+}
+.feedback {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 75px;
+  background: white;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 100px / 50px;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+}
+#square {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  
+  background-color: green;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+#triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100px;
+  left: 100px;
+  /* border-right: 100px solid transparent;
+  border-bottom: 100px solid red; */
+
+  border-right-style: solid;
+  border-right-color: transparent;
+  border-right-width: 100px;
+
+  border-bottom-style: solid;
+  border-bottom-color: red;
+  border-bottom-width: 100px;
+
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+
+#circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+
+#rectangle {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background: red;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id='buttons'>
+    
+    <div class ='title'>Shape UP or Shape OUT</div>
+
+    <button class="btn" name='circle' id='btnCircle' type="submit">make a Circle</button>
+    <input type="text" placeholder="radius px"  id="inputCircle">
+    <div></div>
+    
+    <button class="btn" name='triangle' id='btnTriangle' type="submit">make a triangle</button>
+    <input type="text" placeholder="base px"  id="inputTriangle">
+    <div></div>
+    
+    <button class="btn" name='rectangle' id='btnRectangle'type="submit">make a rectangle</button>
+    <input type="text" placeholder="length px" id="inputRectangleLength">
+    <input type="text" placeholder="width px" id="inputRectangleWidth">
+<div></div>
+    
+    <button class="btn" name='square'id='btnSquare' type="submit">make a square</button>
+    <input type="text" placeholder="side px" id="inputSquare">
+</div>
+
+<div class="container">
+<div id="canvas"></div>
+<div id='side-panel'>
+    <h3>Shape:</h3>
+    <div class='feedback' id='shape'></div>
+    <h3>Width:</h3>
+    <div class ='feedback'id='width'></div>
+    <h3>Height:</h3>
+    <div class='feedback' id='length'></div>
+    <h3>Radius:</h3>
+    <div class='feedback'id='radius'></div>
+    <h3>Area:</h3>
+    <div class='feedback' id='area'></div>
+    <h3>Perimeter:</h3>
+    <div class='feedback' id='perimeter'></div>
+    <div></div>
+<div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
